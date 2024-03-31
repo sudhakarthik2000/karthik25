@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .md{
+                display: grid;
+                grid-template-columns:repeat(3,200px) ;
+                /* align-self: center; */
+                /* margin-top: 100px; */
+                justify-content: center;
+                /* align-content: center; */
+                margin-top: 200px;
+            }
+            .loader{
+                border: 16px solid black;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                animation-name: spin;
+                animation: spin 2s linear infinite;
+                border-top: 16px solid #3498db;
+            }
+            @keyframes spin{
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+            }
+            .spinner{
+                border: 10px solid;
+                height: 100px;
+                width: 100px;
+                animation-name: spin;
+                animation-iteration-count: infinite;
+                animation-duration: 700ms;
+                border-top: 10px solid rgb(0,187,255);
+                border-bottom: 10px solid rgb(0,187,255) ;
+
+
+
+            }
+            .spinner2{
+                animation-name: spin;
+                animation-iteration-count: infinite;
+                animation-duration: 700ms;
+                border: 16px solid;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                border-top: 16px solid #3498db;
+                
+            }
+        </style>
+    </head>
+    <body style="background-color: aqua;">
+    <div class="md">
+        <div class="loader"></div>
+        <div class="spinner"></div>
+        <div class="spinner2"></div>
+    </div>
+    </body>
+</html>
